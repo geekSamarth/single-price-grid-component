@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* defining varibles that will use thoroughly */
+
+:root{
+    --white:hsl(0,0%,100%);
+    --cyan:hsl(179, 62%, 43%);
+    --light-cyan:rgb(97, 209, 207);
+    --bright-yellow:hsl(71, 73%, 54%);
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue:hsl(218, 22%, 67%);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    font-family: 'Karla', 'sans-serif';
+}
+.container{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0px 12px 15px 1px rgba(0,0,0,0.1);
+}
+.introduction{
+    grid-column: 1/4;
+    padding: 35px;
+    background-color: var(--white);
+    border-radius: 6px 6px 0 0;
+}
+.introduction h1{
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 1.1rem;
+}
+.introduction h4{
+    font-size: 16px;
+    color: var(--bright-yellow);
+    margin-bottom: .6rem;
+}
+.introduction p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--grayish-blue);
+}
+.subscription{
+    padding: 30px 35px;
+    background-color: var(--cyan);
+    border-radius: 0 0 0 6px;
+}
+.subscription h1{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: .8rem;
+}
+.subscription .pricing{
+    display: flex;
+    align-items: center;
+    margin-bottom: .4rem;
+}
+.subscription .pricing span{
+    font-size: 28px;
+    color: var(--white);
+    margin-right: 1rem;
+    font-weight: 700;
+}
+.subscription p{
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.5;
+    font-weight: 400;
+}
+.subscription .paragraph{
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.91;
+    margin-bottom: 1.6rem;
+}
+.subscription button{
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    padding: 0.7rem 0;
+    background-color: var(--bright-yellow);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.about{
+    padding: 30px 35px;
+    border-radius: 0 0 6px 0;
+    background-color: var(--light-cyan);
+}
+.about h1{
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.about p{
+    font-size: 13px;
+    color: var(--white);
+    line-height: 1.5;
+    opacity: 0.65;
+}
