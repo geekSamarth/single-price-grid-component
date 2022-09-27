@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* defining varibles that will use thoroughly */
@@ -10,7 +11,7 @@
 :root{
     --white:hsl(0,0%,100%);
     --cyan:hsl(179, 62%, 43%);
-    --light-cyan:rgb(97, 209, 207);
+    --light-cyan:rgb(71, 189, 187);
     --bright-yellow:hsl(71, 73%, 54%);
     --light-gray:hsl(204, 43%, 93%);
     --grayish-blue:hsl(218, 22%, 67%);
@@ -22,6 +23,7 @@ body{
     align-items: center;
     background-color: var(--light-gray);
     font-family: 'Karla', 'sans-serif';
+    overflow-x: hidden;
 }
 .container{
     max-width: 600px;
@@ -51,6 +53,7 @@ body{
     font-weight: 400;
     line-height: 1.6;
     color: var(--grayish-blue);
+    margin-right: 25px;
 }
 .subscription{
     padding: 30px 35px;
@@ -71,7 +74,7 @@ body{
 .subscription .pricing span{
     font-size: 28px;
     color: var(--white);
-    margin-right: 1rem;
+    margin-right: 0.7rem;
     font-weight: 700;
 }
 .subscription p{
@@ -89,12 +92,14 @@ body{
 .subscription button{
     width: 100%;
     display: block;
-    padding: 0.7rem 0;
+    padding: 0.8rem 0;
     background-color: var(--bright-yellow);
     color: var(--white);
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    outline: none;
+    box-shadow: 0px 12px 15px 1px rgba(0,0,0,0.1);
 }
 .about{
     padding: 30px 35px;
@@ -111,4 +116,24 @@ body{
     color: var(--white);
     line-height: 1.5;
     opacity: 0.70;
+}
+
+@media screen and (max-width:540px){
+    .container{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 40px 0;
+    }
+    
+    .subscription{
+        grid-column: 1/4;
+        border-radius: 0;
+    }
+    .subscription button{
+        padding: 1rem 0;
+        font-size: 16px;
+    }
+    .about{
+        border-radius: 0 0 6px 6px;
+    }
 }
