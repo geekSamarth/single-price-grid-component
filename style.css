@@ -83,13 +83,12 @@ body{
 .subscription .paragraph{
     font-size: 14px;
     color: var(--white);
-    opacity: 0.91;
+    opacity: 0.78;
     margin-bottom: 1.6rem;
 }
 .subscription button{
     width: 100%;
     display: block;
-    font-weight: 700;
     padding: 0.7rem 0;
     background-color: var(--bright-yellow);
     color: var(--white);
@@ -108,8 +107,8 @@ body{
     margin-bottom: 1rem;
 }
 .about p{
-    font-size: 13px;
+    font-size: 14px;
     color: var(--white);
     line-height: 1.5;
-    opacity: 0.65;
+    opacity: 0.70;
 }
